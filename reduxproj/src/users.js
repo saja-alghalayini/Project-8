@@ -25,13 +25,31 @@ class Users extends Component {
         
         return (
             <div>
-                {users.map(u => 
-                     <div key={u.id} style={{display:this.state.deleteButton?'block':'none'}} id={u.id}>
-                         <h6 >{u.original_title}</h6> 
-                         <button onClick={() => this.handleButton(u.id)} className="btn btn-danger">Delete</button> 
-                     </div>
+                <div className="container">  <div className="row col-md-3 col  ">
+                
+                {users.map(res => 
+                     
+                    <div class="card text-dark bg-light mb-3" style="max-width: 18rem;" key={res.id} style={{display:this.state.deleteButton?'block':'none', boxShadow:"5px 10px 18px #B2C8DF"}} id={res.id}>
+
+                    <div class="card-header"><h4> Movie Name : {res.original_title}</h4></div>
+
+                    <div class="card-body text-muted">   
+                    <h5>{res.release_date}</h5>
+    
+                    <p class="card-text">{res.overview}</p>
+
+                    <button onClick={() => this.handleButton(res.id)} className="btn btn-outline-info">Delete</button> 
+
+                   
+                    </div>
+                    </div>
+
                 )}
-            </div>
+                
+            </div></div></div>
+
+
+
         )
     }
 }
