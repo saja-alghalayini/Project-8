@@ -14,26 +14,27 @@ function Signup(){
 
 
   
-    <section className="vh-100" style={{ backgroundColor: "#eee" }}>
+    <section className="vh-100">
 
 
   <div className="container h-100">
 
     <div className="row d-flex justify-content-center align-items-center h-100">
-      <div className="col-lg-12 col-xl-11">
-        <div className="card text-black" style={{ borderRadius: 25 }}>
+      <div className="col-lg-12 col-11">
+        <div className="card" style={{border:'none'}} >
           <div className="card-body p-md-5">
             <div className="row justify-content-center">
-            <div className="col-md-10 col-lg-6 col-xl-7 d-flex align-items-center order-1 order-lg-2float-left">
+            <div className="col-md-10 col-lg-6 col-xl-7 d-flex align-items-center order-lg-2float-left" >
                 <img
                   src="https://midoshriks-school.netlify.app/assets/sing/imgs/login-form-img.png"
                   className="img-fluid"
                   alt="Sample image"
-                  style={{height: '459px'}}
+                  style={{height: '419px'}}
                 />
               </div>
-              <div className="col-md-10 col-lg-6 col-xl-5 order-2 order-lg-1">
-                <p className="text-center h1 fw-bold mb-5 mx-1 mx-md-4 mt-4" style={{color:'#7A4495'}}>
+              
+              <div className="col-md-10 col-lg-6 col-xl-5 order-2 order-lg-1" style={{borderLeft:'1px solid #363062'}}>
+                <p className="text-center h1 fw-bold mb-5 mx-1 mx-md-4 mt-4 " style={{color:'#7A4495'}}>
                   Sign up
                 </p>
                 <form className="mx-1 mx-md-4" onSubmit={()=>handleSubmit()}>

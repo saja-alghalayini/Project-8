@@ -21,14 +21,14 @@ function Login(){
           src="https://cdn.discordapp.com/attachments/944998982449528843/1001493263649345606/Login-amico.png"
           className="img-fluid"
           alt="Sample image"
-          style={{height: '750px'}}
+          style={{height: '600px' , borderRight:'2px solide #80558C'}}
         />
 
       </div>
-      <div className="col-md-8 col-lg-6 col-xl-4 offset-xl-1">
+      <div className="col-md-8 col-lg-6 col-xl-4 offset-xl-1 " style={{borderLeft:'1px solid #363062'}}>
         <form onSubmit={(e)=>Fun(e)}>
          
-          <div className="divider d-flex align-items-center my-4">
+          <div className="divider d-flex align-items-center my-4 ">
             <h1 className="text-center fw-bold mx-3 mb-0" style={{color:'#7A4495'}}>Login</h1>
           </div>
           {/* Email input */}
@@ -58,6 +58,7 @@ function Login(){
             /> 
           </div>
           <div className="d-flex justify-content-between align-items-center">
+
             {/* Checkbox */}
             <div className="form-check mb-0">
               <input
@@ -66,20 +67,19 @@ function Login(){
                 defaultValue=""
                 id="form2Example3"
               />
+
               <label className="form-check-label" htmlFor="form2Example3" style={{color:'#7A86B6'}}>
                 Remember me
               </label>
             </div>
-            <a href="#!" className="text-body" style={{color:'#7A86B6'}}>
-              Forgot password?
-            </a>
+           
           </div>
           <div className="text-center text-lg-start mt-4 pt-2">
             <input
             defaultValue="Login"
               type="submit"
-              className="btn btn-primary btn-lg"
-              style={{ paddingLeft: "2.5rem", paddingRight: "2.5rem" }}
+              className="btn btn-lg"
+              style={{ paddingLeft: "2.5rem", paddingRight: "2.5rem", color:"#7A4495", border: "2px solid #7A4495" }}
             />
             
             <p className="small fw-bold mt-2 pt-1 mb-0" style={{color:'#7A4495'}}>
